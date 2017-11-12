@@ -1,0 +1,13 @@
+[user]
+	name = Lachlan Cooper
+	email = lachlan.cooper@redmarker.com.au
+	signingkey = EC559ACF42E301C7
+[alias]
+	amend = commit --amend
+	cached = diff --cached
+	unstage = reset HEAD --
+	discard = checkout --
+[diff]
+	tool = vimdiff
+[commit]
+	gpgsign = true
