@@ -4,6 +4,7 @@
     ~/.Brewfile: Brewfile
     ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
+    ~/.slate: slate
     ~/.vimrc: vimrc
 
 
