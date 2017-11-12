@@ -1,7 +1,17 @@
 call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
 Plug 'archseer/colibri.vim'
 Plug 'fatih/vim-go'
+" Plug 'junegunn/fzf.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-sleuth'
 call plug#end()
 
 set termguicolors
 colorscheme colibri
+
+set backspace=indent,eol,start
