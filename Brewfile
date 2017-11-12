@@ -15,6 +15,7 @@ brew "pwgen"
 brew "rsync"
 brew "terraform"
 brew "tree"
+brew "vim", args: ['with-override-system-vi']
 brew "watch"
 brew "wget"
 cask "alfred"
