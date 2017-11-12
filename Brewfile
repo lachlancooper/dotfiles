@@ -1,5 +1,6 @@
 brew "afl-fuzz"
 brew "ansible"
+brew "awscli"
 brew "bash"
 brew "coreutils"
 brew "curl"
