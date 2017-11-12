@@ -1,6 +1,7 @@
 - clean: ['~']
 
 - link:
+    ~/.Brewfile: Brewfile
     ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
