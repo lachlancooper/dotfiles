@@ -1,3 +1,5 @@
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 alias git=hub
 
 export PS1="\u@\h:\w \$ "
