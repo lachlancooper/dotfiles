@@ -6,6 +6,5 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.slate: slate
+    ~/.ssh/known_hosts: ssh/known_hosts
     ~/.vimrc: vimrc
-
-
