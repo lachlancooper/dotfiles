@@ -17,3 +17,5 @@ colorscheme colibri
 set backspace=indent,eol,start
 
 set updatetime=500
+
+let g:gitgutter_override_sign_column_highlight = 0
