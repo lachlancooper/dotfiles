@@ -13,6 +13,8 @@
 	patch = !git --no-pager diff --no-color
 [diff]
 	tool = vimdiff
+[difftool]
+	prompt = false
 [commit]
 	gpgsign = true
 [core]
