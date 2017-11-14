@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'archseer/colibri.vim'
+Plug 'farmergreg/vim-lastplace'
 Plug 'fatih/vim-go'
 " Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
