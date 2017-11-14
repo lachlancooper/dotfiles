@@ -34,3 +34,5 @@
 	whitespace = red reverse
 [diff-so-fancy]
 	markEmptyLines = false
+[push]
+	default = current
