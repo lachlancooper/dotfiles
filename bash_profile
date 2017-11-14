@@ -1,4 +1,5 @@
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+[ -f /usr/local/share/liquidprompt ] && . /usr/local/share/liquidprompt
 
 alias git=hub
 

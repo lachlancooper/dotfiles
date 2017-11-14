@@ -5,6 +5,7 @@
     ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.liquidpromptrc: liquidpromptrc
     ~/.slate: slate
     ~/.ssh/known_hosts: ssh/known_hosts
     ~/.vimrc: vimrc
