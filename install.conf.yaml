@@ -7,6 +7,7 @@
     ~/.gitignore_global: gitignore_global
     ~/.liquidpromptrc: liquidpromptrc
     ~/.slate: slate
+    ~/.ssh/config: ssh/config
     ~/.ssh/known_hosts: ssh/known_hosts
     ~/.vimrc: vimrc
     /usr/local/etc/bash_completion.d/docker: /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion

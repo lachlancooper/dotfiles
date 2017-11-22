@@ -1,0 +1,9 @@
+# don't save or check known hosts for ephemeral EC2 instances
+Host *.compute.amazonaws.com
+	StrictHostKeyChecking no
+	UserKnownHostsFile /dev/null
+	LogLevel QUIET
+Host *
+	UseKeychain yes
+	AddKeysToAgent yes
+	IdentityFile ~/.ssh/id_rsa
