@@ -1,6 +1,7 @@
 - clean: ['~']
 
 - link:
+    ~/.ansible.cfg: ansible.cfg
     ~/.Brewfile: Brewfile
     ~/.bash_profile: bash_profile
     ~/.gitconfig: gitconfig
