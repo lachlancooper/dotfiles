@@ -2,11 +2,13 @@
 [ -f /usr/local/share/liquidprompt ] && . /usr/local/share/liquidprompt
 
 alias git=hub
+alias canhazip="http -b canhazip.com"
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-export PROMPT_COMMAND="echo -ne '\033]0;${USER}@${HOSTNAME%%.*}\007';$PROMPT_COMMAND"
+export PROMPT_COMMAND="echo -ne '\033]0;${PWD/#$HOME/~}\007';$PROMPT_COMMAND"
 export PS1="\u@\h:\w \$ "
-export HISTSIZE=1000000
+export HISTFILESIZE=
+export HISTSIZE=
 export HISTCONTROL=ignoredups
 export HISTTIMEFORMAT="%F %T "
