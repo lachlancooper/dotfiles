@@ -4,6 +4,7 @@
     ~/.ansible.cfg: ansible.cfg
     ~/.Brewfile: Brewfile
     ~/.bash_profile: bash_profile
+    ~/.curlrc: curlrc
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.liquidpromptrc: liquidpromptrc
