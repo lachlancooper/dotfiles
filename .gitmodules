@@ -4,3 +4,4 @@
 [submodule "iterm2"]
 	path = iterm2
 	url = git@github.com:lachlancooper/iterm2.git
+	ignore = dirty
