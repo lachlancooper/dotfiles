@@ -1,7 +1,6 @@
 [user]
 	name = Lachlan Cooper
 	email = lachlancooper@gmail.com
-	signingkey = B4DB0AB97D3FF658
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
 [alias]
@@ -13,8 +12,12 @@
 	unstage = reset HEAD --
 	vimdiff = difftool -y -t vimdiff
 [commit]
-	gpgsign = true
+	gpgSign = true
 	verbose = true
+[gpg]
+	program = /usr/local/bin/krgpg
+[tag]
+	forceSignAnnotated = true
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = ~/.gitignore_global

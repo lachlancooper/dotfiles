@@ -1,3 +1,4 @@
+tap "kryptco/tap"
 tap "homebrew/core"
 tap "homebrew/bundle"
 tap "tavianator/tap"
@@ -45,6 +46,7 @@ brew "vault"
 brew "vim", args: ["with-override-system-vi"]
 brew "watch"
 brew "wget"
+brew "kryptco/tap/kr"
 brew "tavianator/tap/bfs"
 cask "alfred"
 cask "atom"

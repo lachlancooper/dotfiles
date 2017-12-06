@@ -16,3 +16,5 @@ export HISTTIMEFORMAT="%F %T "
 export GOPATH=$HOME/.go
 
 export PATH=$PATH:$(go env GOPATH)/bin
+
+export GPG_TTY=$(tty)

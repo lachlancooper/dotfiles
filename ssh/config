@@ -6,4 +6,7 @@ Host *.compute.amazonaws.com
 Host *
 	UseKeychain yes
 	AddKeysToAgent yes
+	PKCS11Provider /usr/local/lib/kr-pkcs11.so
+	ProxyCommand /usr/local/bin/krssh %h %p
+	IdentityFile ~/.ssh/id_kryptonite
 	IdentityFile ~/.ssh/id_rsa
