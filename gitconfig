@@ -39,3 +39,6 @@
 	markEmptyLines = false
 [push]
 	default = current
+[branch]
+	autoSetupMerge = always
+	autoSetupRebase = always
