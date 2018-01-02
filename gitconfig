@@ -1,8 +1,6 @@
 [user]
 	name = Lachlan Cooper
 	email = lachlancooper@gmail.com
-[includeIf "gitdir:~/work/"]
-	path = ~/work/.gitconfig
 [alias]
 	amend = commit --amend --date=now
 	cached = diff --cached
