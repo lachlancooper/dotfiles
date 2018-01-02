@@ -19,6 +19,7 @@ set termguicolors
 colorscheme colibri
 
 set backspace=indent,eol,start
+set ts=4
 
 set updatetime=500
 
