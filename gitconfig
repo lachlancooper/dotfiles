@@ -17,10 +17,7 @@
 	resync = !legit resync
 	undo = !legit undo
 [commit]
-	gpgSign = true
 	verbose = true
-[gpg]
-	program = /usr/local/bin/krgpg
 [tag]
 	forceSignAnnotated = true
 [core]

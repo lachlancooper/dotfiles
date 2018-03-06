@@ -55,7 +55,6 @@ brew "vim", args: ["with-override-system-vi"]
 brew "watch"
 brew "wget"
 brew "yarn"
-brew "kryptco/tap/kr"
 brew "tavianator/tap/bfs"
 cask "alfred"
 cask "atom"
