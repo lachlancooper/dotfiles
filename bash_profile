@@ -3,6 +3,7 @@
 
 alias git=hub
 alias canhazip="http -b canhazip.com"
+alias ag="ag -W 120 --pager=\"less -XFR\""
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
