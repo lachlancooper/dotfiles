@@ -7,7 +7,6 @@ alias ag="ag -W 120 --pager=\"less -XFR\""
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-export PROMPT_COMMAND="echo -ne '\033]0;${PWD/#$HOME/~}\007';$PROMPT_COMMAND"
 export PS1="\u@\h:\w \$ "
 export HISTFILESIZE=
 export HISTSIZE=
