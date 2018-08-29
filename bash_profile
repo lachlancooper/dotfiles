@@ -22,6 +22,8 @@ npm() {
   npm $@
 }
 
+shopt -s globstar
+
 alias git=hub
 alias canhazip="http -b canhazip.com"
 alias ag="ag -W 120 --pager=\"less -XFR\""
