@@ -4,5 +4,6 @@ Host *.compute.amazonaws.com
 	UserKnownHostsFile /dev/null
 	LogLevel QUIET
 Host *
+	User ubuntu
 	UseKeychain yes
 	AddKeysToAgent yes
