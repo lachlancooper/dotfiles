@@ -23,19 +23,6 @@
 		</array>
 		<key>B547AF2A-C0DC-4A25-8319-69D5A924FAD1</key>
 		<array/>
-		<key>F232B2B4-CE8F-43C5-99D7-DACC0580259D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5EA68F94-27ED-48AB-9328-F47468560188</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Kartik N</string>
@@ -111,35 +98,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>F232B2B4-CE8F-43C5-99D7-DACC0580259D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -148,21 +106,14 @@
 		<key>5EA68F94-27ED-48AB-9328-F47468560188</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>250</integer>
 			<key>ypos</key>
 			<integer>30</integer>
 		</dict>
 		<key>B547AF2A-C0DC-4A25-8319-69D5A924FAD1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
-			<key>ypos</key>
-			<integer>30</integer>
-		</dict>
-		<key>F232B2B4-CE8F-43C5-99D7-DACC0580259D</key>
-		<dict>
-			<key>xpos</key>
-			<integer>80</integer>
+			<integer>490</integer>
 			<key>ypos</key>
 			<integer>30</integer>
 		</dict>
