@@ -26,7 +26,7 @@ shopt -s globstar
 
 alias git=hub
 alias canhazip="http -b canhazip.com"
-alias ag="ag -W 120 --pager=\"less -XFR\""
+alias ag="ag -W 120 --pager=\"less -XFR\" --path-to-ignore ~/.agignore"
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
