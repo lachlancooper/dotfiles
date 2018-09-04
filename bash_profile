@@ -37,5 +37,6 @@ export HISTCONTROL=ignoredups
 export HISTTIMEFORMAT="%F %T "
 
 export GOPATH=$HOME/.go
+export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
 export PATH=$PATH:$(go env GOPATH)/bin
