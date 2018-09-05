@@ -1,5 +1,2 @@
-# don't warn me about .gitignore errors
---no-ignore-messages
-
 # ignore case when provided pattern is lowercase
 --smart-case
