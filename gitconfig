@@ -7,7 +7,7 @@
 	amend = commit --amend --date=now
 	cached = diff --cached
 	discard = checkout --
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' --abbrev-commit --
 	patch = !git --no-pager diff --no-color
 	unstage = reset HEAD --
 	vimdiff = difftool -y -t vimdiff
