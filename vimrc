@@ -20,6 +20,7 @@ call plug#end()
 set termguicolors
 colorscheme colibri
 
+set viminfo='100,s100
 set backspace=indent,eol,start
 set ts=4
 
