@@ -54,7 +54,7 @@ brew "kubernetes-cli"
 brew "kubectx", args: ["with-short-names"]
 brew "kubernetes-helm"
 brew "legit"
-brew "liquidprompt"
+brew "liquidprompt", args: ["HEAD"]
 brew "moreutils"
 brew "netcat"
 brew "nmap"
