@@ -18,6 +18,8 @@
 	switch = !legit switch
 	resync = !legit resync
 	undo = !legit undo
+	who = !git shortlog -sn
+	prunelocal = !sh -c \"git checkout -q master && git fetch -q --prune && git branch -vv | grep ': gone]' | cut -d' ' -f3 | xargs git branch -D\"
 [commit]
 	verbose = true
 [tag]
