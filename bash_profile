@@ -34,7 +34,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export PS1="\u@\h:\w \$ "
 export HISTFILESIZE=
 export HISTSIZE=
-export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoreboth
 export HISTTIMEFORMAT="%F %T "
 
 export GOPATH=$HOME/.go
