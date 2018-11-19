@@ -6,6 +6,7 @@
 [alias]
 	amend = commit --amend --date=now
 	cached = diff --cached
+	co = checkout
 	discard = checkout --
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' --abbrev-commit --
 	patch = !git --no-pager diff --no-color
