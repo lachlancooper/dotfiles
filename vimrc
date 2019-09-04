@@ -3,7 +3,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'archseer/colibri.vim'
 Plug 'farmergreg/vim-lastplace'
 Plug 'fatih/vim-go'
-Plug 'fatih/vim-hclfmt'
+Plug 'hashivim/vim-terraform'
 " Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'sheerun/vim-polyglot'
@@ -28,3 +28,4 @@ set ts=4
 set updatetime=500
 
 let g:gitgutter_override_sign_column_highlight = 0
+let g:terraform_fmt_on_save=1
