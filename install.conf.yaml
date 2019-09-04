@@ -13,6 +13,7 @@
     ~/.ripgreprc: ripgreprc
     ~/.slate: slate
     ~/.ssh/config: ssh/config
+    ~/.terraformrc: terraformrc
     ~/.vimrc: vimrc
     ~/Library/KeyBindings/DefaultKeyBinding.dict: DefaultKeyBinding.dict
     ~/Library/Application Support/Alfred 3/Alfred.alfredpreferences/workflows/numi: numi.alfredworkflow
