@@ -7,14 +7,14 @@
 	amend = commit --amend --date=now
 	cached = diff --cached
 	co = checkout
-	discard = checkout --
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' --abbrev-commit --
 	patch = !git --no-pager diff --no-color
-	unstage = reset HEAD --
+	unstage = restore --staged --
 	vimdiff = difftool -y -t vimdiff
 	branches = !legit branches
 	publish = !legit publish
 	unpublish = !legit unpublish
+	staged = diff --staged
 	sync = !legit sync
 	switch = !legit switch
 	resync = !legit resync
