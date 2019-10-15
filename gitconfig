@@ -43,6 +43,7 @@
 	new = green bold
 	whitespace = red reverse
 [diff-so-fancy]
+	stripLeadingSymbols = false
 	markEmptyLines = false
 [push]
 	default = current
