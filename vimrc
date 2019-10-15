@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'archseer/colibri.vim'
+Plug 'dense-analysis/ale'
 Plug 'farmergreg/vim-lastplace'
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
@@ -28,4 +29,14 @@ set ts=4
 set updatetime=500
 
 let g:gitgutter_override_sign_column_highlight = 0
-let g:terraform_fmt_on_save=1
+let g:terraform_fmt_on_save = 1
+
+" ALE
+let g:ale_linters_explicit = 1
+let g:ale_linters = {
+\  'sh': ['shellcheck'],
+\  'yaml': ['yamllint'],
+\}
+
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
