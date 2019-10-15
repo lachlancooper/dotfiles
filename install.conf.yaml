@@ -10,6 +10,7 @@
     ~/.gitignore_global: gitignore_global
     ~/.liquidpromptrc: liquidpromptrc
     ~/.rgignore: rgignore
+    ~/.mdlrc: mdlrc
     ~/.ripgreprc: ripgreprc
     ~/.slate: slate
     ~/.ssh/config: ssh/config
