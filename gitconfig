@@ -11,14 +11,7 @@
 	patch = !git --no-pager diff --no-color
 	unstage = restore --staged --
 	vimdiff = difftool -y -t vimdiff
-	branches = !legit branches
-	publish = !legit publish
-	unpublish = !legit unpublish
 	staged = diff --staged
-	sync = !legit sync
-	switch = !legit switch
-	resync = !legit resync
-	undo = !legit undo
 	who = !git shortlog -sn
 	prunelocal = !sh -c \"git checkout -q master && git fetch -q --prune && git branch -vv | grep ': gone]' | cut -d' ' -f3 | xargs git branch -D\"
 [commit]

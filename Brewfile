@@ -72,7 +72,6 @@ brew "kubernetes-cli"
 brew "kubectx", link: false
 brew "kubernetes-helm"
 brew "kustomize"
-brew "legit"
 brew "linkerd"
 brew "liquidprompt", args: ["HEAD"]
 brew "lua"
