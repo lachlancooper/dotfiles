@@ -1,2 +1,5 @@
 # ignore case when provided pattern is lowercase
 --smart-case
+
+# ignore certain directories
+--glob=!vendor/*
