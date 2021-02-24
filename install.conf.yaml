@@ -1,8 +1,6 @@
 - clean: ['~']
 
 - link:
-    ~/.agignore: agignore
-    ~/.ansible.cfg: ansible.cfg
     ~/.Brewfile: Brewfile
     ~/.bash_profile: bash_profile
     ~/.curlrc: curlrc
