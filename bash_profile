@@ -2,27 +2,6 @@
 [ -f /usr/local/share/liquidprompt ] && . /usr/local/share/liquidprompt
 complete -C /usr/local/Cellar/terraform/0.11.8/bin/terraform terraform
 
-lazynvm() {
-  unset -f nvm node npm
-  export NVM_DIR=$HOME/.nvm
-  [ -s "$(brew --prefix nvm)/nvm.sh" ] && . "$(brew --prefix nvm)/nvm.sh"
-}
-
-nvm() {
-  lazynvm
-  nvm $@
-}
-
-node() {
-  lazynvm
-  node $@
-}
-
-npm() {
-  lazynvm
-  npm $@
-}
-
 shopt -s globstar
 
 alias git=hub
