@@ -32,7 +32,7 @@ brew "hub"
 brew "ipcalc"
 brew "jq"
 brew "kubernetes-cli"
-brew "kubectx"
+brew "kubectx", link: false
 brew "liquidprompt", args: ["HEAD"]
 brew "netcat"
 brew "packer"
@@ -54,7 +54,7 @@ brew "vim"
 brew "wget"
 brew "yamllint"
 brew "ykman"
-brew "johanhaleby/kubetail/kubetail"
+brew "johanhaleby/kubetail/kubetail", args: ["with-short-names"]
 brew "yleisradio/terraforms/chtf"
 cask "alfred"
 cask "docker"
