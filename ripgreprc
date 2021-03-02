@@ -1,5 +1,9 @@
 # ignore case when provided pattern is lowercase
 --smart-case
 
+# only show a preview for extremely long lines
+--max-columns=500
+--max-columns-preview
+
 # ignore certain directories
 --glob=!vendor/*
