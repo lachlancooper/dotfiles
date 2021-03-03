@@ -27,7 +27,7 @@ brew "graphviz"
 brew "grc"
 brew "grep"
 brew "gron"
-brew "helm"
+brew "helm@2", link: true
 brew "htop"
 brew "httpie"
 brew "hub"
