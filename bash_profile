@@ -25,6 +25,5 @@ export HISTTIMEFORMAT="%F %T "
 
 export GOPATH=$HOME/.go
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 export PATH=$PATH:$(go env GOPATH)/bin
