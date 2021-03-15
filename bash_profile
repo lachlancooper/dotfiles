@@ -1,6 +1,7 @@
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 [ -f /usr/local/share/liquidprompt ] && . /usr/local/share/liquidprompt
-complete -C /usr/local/Cellar/terraform/0.11.8/bin/terraform terraform
+[ -f /usr/local/share/chtf/chtf.sh ] && . /usr/local/share/chtf/chtf.sh
+complete -C /usr/local/bin/terraform terraform
 
 shopt -s globstar
 
