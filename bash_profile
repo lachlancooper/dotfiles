@@ -3,6 +3,13 @@
 [ -f /usr/local/share/chtf/chtf.sh ] && . /usr/local/share/chtf/chtf.sh
 complete -C /usr/local/bin/terraform terraform
 
+if [ ! $(command -v kctx) ]; then
+    brew unlink kubectx
+    version=$(brew info kubectx --json | jq -r '.[].installed[].version')
+    ln -sf "/usr/local/Cellar/kubectx/$version/bin/kubectx" /usr/local/bin/kctx
+    ln -sf "/usr/local/Cellar/kubectx/$version/etc/bash_completion.d/kubectx" /usr/local/etc/bash_completion.d/kctx
+fi
+
 shopt -s globstar
 
 alias git=hub
