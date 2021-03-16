@@ -1,6 +1,7 @@
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 [ -f /usr/local/share/liquidprompt ] && . /usr/local/share/liquidprompt
 [ -f /usr/local/share/chtf/chtf.sh ] && . /usr/local/share/chtf/chtf.sh
+[ -f ~/work/.bash_profile ] && . ~/work/.bash_profile
 complete -C /usr/local/bin/terraform terraform
 
 if [ ! $(command -v kctx) ]; then
