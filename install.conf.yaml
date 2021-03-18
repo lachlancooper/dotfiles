@@ -3,6 +3,7 @@
 - link:
     ~/.Brewfile: Brewfile
     ~/.bash_profile: bash_profile
+    ~/.config/yamllint/config: config/yamllint/config
     ~/.curlrc: curlrc
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
