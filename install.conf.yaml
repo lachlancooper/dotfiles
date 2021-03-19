@@ -16,7 +16,6 @@
     ~/.terraformrc: terraformrc
     ~/.vimrc: vimrc
     ~/Library/KeyBindings/DefaultKeyBinding.dict: DefaultKeyBinding.dict
-    ~/Library/Application Support/Alfred 3/Alfred.alfredpreferences/workflows/numi: numi.alfredworkflow
     ~/Library/Application Support/Alfred 3/Alfred.alfredpreferences/workflows/yubicodes: yubicodes.alfredworkflow
     /usr/local/etc/bash_completion.d/ykman: ykman.bash-completion
     /usr/local/etc/bash_completion.d/docker: /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
