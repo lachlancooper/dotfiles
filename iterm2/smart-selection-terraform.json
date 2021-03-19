@@ -1,0 +1,40 @@
+{
+  "Smart Selection Rules" : [
+    {
+      "notes" : "Terraform resource",
+      "precision" : "very_low",
+      "regex" : "resource \"([^_\"]+)_([^\"]+)\"",
+      "actions" : [
+        {
+          "title" : "",
+          "action" : 1,
+          "parameter" : "https:\/\/www.terraform.io\/docs\/providers\/\\1\/r\/\\2.html"
+        }
+      ]
+    },
+    {
+      "notes" : "Terraform datasource",
+      "precision" : "very_low",
+      "regex" : "data \"([^_\"]+)_([^\"]+)\"",
+      "actions" : [
+        {
+          "title" : "",
+          "action" : 1,
+          "parameter" : "https:\/\/www.terraform.io\/docs\/providers\/\\1\/d\/\\2.html"
+        }
+      ]
+    },
+    {
+      "notes" : "Terraform provider",
+      "precision" : "very_low",
+      "regex" : "provider \"([^\"]+)\"",
+      "actions" : [
+        {
+          "title" : "",
+          "action" : 1,
+          "parameter" : "https:\/\/www.terraform.io\/docs\/providers\/\\1\/index.html"
+        }
+      ]
+    }
+  ]
+}
