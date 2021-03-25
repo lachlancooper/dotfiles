@@ -1,3 +1,8 @@
+alias git=hub
+alias cat=bat
+alias pcra='pre-commit run -a'
+alias pcau='pre-commit autoupdate'
+
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 [ -f /usr/local/share/liquidprompt ] && . /usr/local/share/liquidprompt
 [ -f /usr/local/share/chtf/chtf.sh ] && . /usr/local/share/chtf/chtf.sh
@@ -12,9 +17,6 @@ if [ ! $(command -v kctx) ]; then
 fi
 
 shopt -s globstar
-
-alias git=hub
-alias cat=bat
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
