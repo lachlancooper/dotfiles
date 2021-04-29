@@ -1,9 +1,3 @@
-# don't save or check known hosts for ephemeral EC2 instances
-Host *.compute.amazonaws.com
-	StrictHostKeyChecking no
-	UserKnownHostsFile /dev/null
-	LogLevel QUIET
 Host *
-	User ubuntu
 	UseKeychain yes
 	AddKeysToAgent yes
