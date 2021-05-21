@@ -36,3 +36,11 @@ rg() {
         command rg "$@"
     fi
 }
+
+ssm() {
+    environment=$1
+    region=$2
+    instance=$3
+
+    AWS_PROFILE="$environment" AWS_REGION="$region" aws ssm start-session --target "$instance" --document-name AWS-StartInteractiveCommand --parameters command="bash -l"
+}
