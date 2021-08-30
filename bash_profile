@@ -1,4 +1,3 @@
-alias git=hub
 alias cat=bat
 alias pcra='pre-commit run -a'
 alias pcau='pre-commit autoupdate'
