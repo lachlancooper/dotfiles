@@ -25,6 +25,7 @@ export HISTFILESIZE=
 export HISTSIZE=
 export HISTCONTROL=ignoreboth
 export HISTTIMEFORMAT="%F %T "
+export DOCKER_SCAN_SUGGEST=false
 
 export GOPATH=$HOME/.go
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
