@@ -1,3 +1,10 @@
+# ci
 !.buildkite/
 !.github/
 !.gitmodules
+
+# linting
+!.golangci.yml
+!.pre-commit-config.yaml
+!.protolint.yaml
+!.yamllint
