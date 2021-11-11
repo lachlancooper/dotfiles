@@ -42,5 +42,10 @@ ssm() {
     region=$2
     instance=$3
 
+    if [[ $# -ne 3 ]]; then
+        echo "usage: ssm <environment> <region> <instance-id>"
+        return 1
+    fi
+
     AWS_PROFILE="$environment" AWS_REGION="$region" aws ssm start-session --target "$instance" --document-name AWS-StartInteractiveCommand --parameters command="bash -l"
 }
