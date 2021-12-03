@@ -1,5 +1,6 @@
 # ci
 !.buildkite/
+!.circleci/
 !.github/
 !.gitmodules
 
