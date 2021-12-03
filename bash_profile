@@ -43,7 +43,7 @@ ssm() {
     instance=$3
 
     if [[ $# -ne 3 ]]; then
-        echo "usage: ssm <environment> <region> <instance-id>"
+        echo "usage: $FUNCNAME <environment> <region> <instance-id>"
         return 1
     fi
 
