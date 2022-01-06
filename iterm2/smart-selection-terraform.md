@@ -6,6 +6,6 @@ Add these manually in iTerm2 -> Preferences -> Profiles -> Advanced -> Smart Sel
 
 | Description          | Regular Expression            | Action      | Parameter                                               |
 |----------------------|-------------------------------|-------------|---------------------------------------------------------|
-| Terraform resource   | `resource "([^_"]+)_([^"]+)"` | Open URL... | `https://www.terraform.io/docs/providers/\1/r/\2.html`  |
-| Terraform datasource | `data "([^_"]+)_([^"]+)"`     | Open URL... | `https://www.terraform.io/docs/providers/\1/d/\2.html`  |
+| Terraform resource   | `resource "([^_"]+)_([^"]+)"` | Open URL... | `https://www.terraform.io/docs/providers/\1/r/\2`       |
+| Terraform datasource | `data "([^_"]+)_([^"]+)"`     | Open URL... | `https://www.terraform.io/docs/providers/\1/d/\2`       |
 | Terraform provider   | `provider "([^"]+)"`          | Open URL... | `https://www.terraform.io/docs/providers/\1/index.html` |
