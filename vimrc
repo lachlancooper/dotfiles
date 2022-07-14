@@ -31,6 +31,7 @@ colorscheme colibri
 set viminfo='100,s100
 set backspace=indent,eol,start
 set ts=4
+set ruler
 
 set updatetime=500
 
