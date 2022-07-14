@@ -5,6 +5,7 @@
     ~/.bash_profile: bash_profile
     ~/.config/yamllint/config: config/yamllint/config
     ~/.curlrc: curlrc
+    ~/.docker/config.json: docker/config.json
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.liquidpromptrc: liquidpromptrc
