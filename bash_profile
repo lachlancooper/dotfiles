@@ -39,6 +39,18 @@ rg() {
     fi
 }
 
+envpod() {
+    namespace=$1
+    pod=$2
+
+    if [[ $# -ne 2 ]]; then
+        echo "usage: $FUNCNAME <namespace> <pod>"
+        return 1
+    fi
+
+    kubectl exec -n "$namespace" "$pod" -- sh -c 'tr "\0" "\n" < /proc/$(pgrep -P 1)/environ'
+}
+
 ssm() {
     environment=$1
     region=$2
