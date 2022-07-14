@@ -29,6 +29,8 @@ export DOCKER_SCAN_SUGGEST=false
 export GOPATH=$HOME/.go
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
+export HOMEBREW_NO_INSTALL_CLEANUP=1
+
 rg() {
     if [ -t 1 ]; then
         command rg -p "$@" | less -RFX
