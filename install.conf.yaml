@@ -12,7 +12,6 @@
     ~/.rgignore: rgignore
     ~/.mdlrc: mdlrc
     ~/.ripgreprc: ripgreprc
-    ~/.slate: slate
     ~/.ssh/config: ssh/config
     ~/.terraformrc: terraformrc
     ~/.vimrc: vimrc
