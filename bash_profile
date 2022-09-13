@@ -10,9 +10,15 @@ complete -C /usr/local/bin/terraform terraform
 
 if [ ! $(command -v kctx) ]; then
     brew unlink kubectx
-    version=$(brew info kubectx --json | jq -r '.[].installed[].version')
+    version=$(brew info kubectx --json | jq -r '.[].installed[].version' | tail -1)
     ln -sf "/usr/local/Cellar/kubectx/$version/bin/kubectx" /usr/local/bin/kctx
     ln -sf "/usr/local/Cellar/kubectx/$version/etc/bash_completion.d/kubectx" /usr/local/etc/bash_completion.d/kctx
+fi
+
+if [ ! $(command -v kspy) ]; then
+    brew unlink kubespy
+    version=$(brew info kubespy --json | jq -r '.[].installed[].version' | tail -1)
+    ln -sf "/usr/local/Cellar/kubespy/$version/bin/kubespy" /usr/local/bin/kspy
 fi
 
 shopt -s globstar
