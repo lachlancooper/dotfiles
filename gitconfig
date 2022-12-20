@@ -40,6 +40,7 @@
 	markEmptyLines = false
 [push]
 	default = current
+	autoSetupRemote = true
 [fetch]
 	prune = true
 [url "git@github.com:"]
