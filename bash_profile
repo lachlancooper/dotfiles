@@ -62,10 +62,32 @@ ssm() {
     region=$2
     instance=$3
 
-    if [[ $# -ne 3 ]]; then
-        echo "usage: $FUNCNAME <environment> <region> <instance-id>"
+    case $# in
+    2)
+        echo "Listing instances in $environment $region ..."
+        # ssm is quicker but doesn't show instance Name tags
+        # AWS_PROFILE="$environment" AWS_REGION="$region" aws ssm get-inventory --filters Key=AWS:InstanceInformation.InstanceStatus,Values=Active | jq -r '.Entities[] | [.Id, .Data["AWS:InstanceInformation"].Content[0].ComputerName] | @tsv'
+        AWS_PROFILE="$environment" AWS_REGION="$region" aws ec2 describe-instances --filters Name=instance-state-name,Values=running | jq -r '.Reservations[].Instances[] | [.InstanceId, .PrivateDnsName, (.Tags[]|select(.Key=="Name")|.Value)] | @tsv' | column -s "$(printf '\t')" -t
+        ;;
+    3)
+        AWS_PROFILE="$environment" AWS_REGION="$region" aws ssm start-session --target "$instance" --document-name AWS-StartInteractiveCommand --parameters command="bash -l"
+        ;;
+    *)
+        echo "usage: $FUNCNAME <environment> <region> [<instance-id>]"
         return 1
-    fi
-
-    AWS_PROFILE="$environment" AWS_REGION="$region" aws ssm start-session --target "$instance" --document-name AWS-StartInteractiveCommand --parameters command="bash -l"
+        ;;
+    esac
 }
+
+ssmk8s() {
+    nodename=$1
+
+    environment=$(kubectl config current-context | cut -d'-' -f4)
+    providerid=$(kubectl get nodes "$nodename" -o json | jq -r .spec.providerID)
+    region=$(echo "$providerid" | cut -d'/' -f4 | rev | cut -c2- | rev)
+    instanceid=$(echo "$providerid" | cut -d'/' -f5)
+
+    ssm "$environment" "$region" "$instanceid"
+}
+
+export PATH="$(brew --prefix python@3.11)/libexec/bin:$PATH:${KREW_ROOT:-$HOME/.krew}/bin"
