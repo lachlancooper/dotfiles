@@ -1,24 +1,29 @@
 alias cat=bat
-alias pcra='pre-commit run -a'
+alias pcra='pre-commit run --all-files'
 alias pcau='pre-commit autoupdate'
+alias grb='goreleaser build --clean --snapshot --single-target'
 
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
-[ -f /usr/local/share/liquidprompt ] && . /usr/local/share/liquidprompt
-[ -f /usr/local/share/chtf/chtf.sh ] && . /usr/local/share/chtf/chtf.sh
-[ -f ~/work/.bash_profile ] && . ~/work/.bash_profile
+[ -s /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+[ -s /usr/local/share/liquidprompt ] && . /usr/local/share/liquidprompt
+[ -s /usr/local/share/chtf/chtf.sh ] && . /usr/local/share/chtf/chtf.sh
+# [ -s /usr/local/share/chruby/chruby.sh ] && . /usr/local/share/chruby/chruby.sh
+# [ -s /usr/local/share/chruby/auto.sh ] && . /usr/local/share/chruby/auto.sh
+[ -s /usr/local/opt/nvm/nvm.sh ] && . /usr/local/opt/nvm/nvm.sh
+[ -s /usr/local/opt/nvm/etc/bash_completion.d/nvm ] && . /usr/local/opt/nvm/etc/bash_completion.d/nvm
+[ -s ~/work/.bash_profile ] && . ~/work/.bash_profile
 complete -C /usr/local/bin/terraform terraform
 
 if [ ! $(command -v kctx) ]; then
     brew unlink kubectx
     version=$(brew info kubectx --json | jq -r '.[].installed[].version' | tail -1)
-    ln -sf "/usr/local/Cellar/kubectx/$version/bin/kubectx" /usr/local/bin/kctx
-    ln -sf "/usr/local/Cellar/kubectx/$version/etc/bash_completion.d/kubectx" /usr/local/etc/bash_completion.d/kctx
+    ln -sf "../Cellar/kubectx/${version}/bin/kubectx" /usr/local/bin/kctx
+    ln -sf "../../Cellar/kubectx/${version}/etc/bash_completion.d/kubectx" /usr/local/etc/bash_completion.d/kctx
 fi
 
 if [ ! $(command -v kspy) ]; then
     brew unlink kubespy
     version=$(brew info kubespy --json | jq -r '.[].installed[].version' | tail -1)
-    ln -sf "/usr/local/Cellar/kubespy/$version/bin/kubespy" /usr/local/bin/kspy
+    ln -sf "../Cellar/kubespy/${version}/bin/kubespy" /usr/local/bin/kspy
 fi
 
 shopt -s globstar
@@ -33,6 +38,7 @@ export HISTTIMEFORMAT="%F %T "
 export DOCKER_SCAN_SUGGEST=false
 
 export GOPATH=$HOME/.go
+export NVM_DIR=$HOME/.nvm
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
 export HOMEBREW_NO_INSTALL_CLEANUP=1
